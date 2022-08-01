@@ -53,12 +53,36 @@ body {
 }
 
 
+/* ---------Estilos Portfolio--------- */
+.port-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+
+.sombra {
+  box-shadow: 0px 10px 52px 13px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 52px 13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 52px 13px rgba(0, 0, 0, 0.75);
+}
+
+
+
+
+
 
 /* ---------Estilos Quienes Somos--------- */
 
 .qs-container {
   margin-top: 100px;
   text-align: center;
+}
+
+
+.qs-img-3,
+.qs-img-4 {
+  display: none;
 }
 
 
@@ -226,11 +250,11 @@ footer {
 
   /* ---------- Estilos Quienes Somos ---------- */
 
-  .container {
+  .qs-container {
     display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: 250px;
-    grid-auto-columns: 1fr;
+    grid-template-columns: -1fr -1fr;
+    grid-template-rows: -1fr -1fr -1fr -1fr;
+    grid-auto-columns: -1fr;
     gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -240,30 +264,31 @@ footer {
       "img-left bottom-right";
   }
 
-  .top-left {
+  .qs-img-1 {
     grid-area: top-left;
   }
 
-  .text-right {
+  .qs-text-1 {
     grid-area: text-right;
   }
 
-  .img-right {
+  .qs-img-2 {
     grid-area: img-right;
   }
 
-  .text-left {
+  .qs-text-2 {
     grid-area: text-left;
   }
 
-  .img-left {
+  .qs-img-3 {
+    display: block;
     grid-area: img-left;
   }
 
-  .bottom-right {
+  .qs-img-4 {
+    display: block;
     grid-area: bottom-right;
   }
-
 
 
 
