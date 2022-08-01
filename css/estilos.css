@@ -226,29 +226,44 @@ footer {
 
   /* ---------- Estilos Quienes Somos ---------- */
 
-  .qs-container {
+  .container {
     display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 250px;
+    grid-auto-columns: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
     grid-template-areas:
-      "top-left top-right"
-      "bottom-left bottom-right";
-    grid-gap: 10px;
+      "top-left text-right"
+      "top-left img-right"
+      "text-left bottom-right"
+      "img-left bottom-right";
   }
 
-  .item-img-1 {
+  .top-left {
     grid-area: top-left;
   }
 
-  .item-p-1 {
-    grid-area: top-right;
+  .text-right {
+    grid-area: text-right;
   }
 
-  .item-img-2 {
+  .img-right {
+    grid-area: img-right;
+  }
+
+  .text-left {
+    grid-area: text-left;
+  }
+
+  .img-left {
+    grid-area: img-left;
+  }
+
+  .bottom-right {
     grid-area: bottom-right;
   }
 
-  .item-p-2 {
-    grid-area: bottom-left;
-  }
 
 
 
