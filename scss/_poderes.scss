@@ -1,0 +1,16 @@
+$redes: (
+  twitter: rgb(0, 119, 255),
+  instagram: rgb(255, 55, 0),
+  mail: rgb(255, 255, 0)
+);
+
+
+%i-placeholder {
+  margin-right: 5px;
+}
+
+
+@mixin size-logo {
+  width: 65px;
+  height: 65px;
+}
