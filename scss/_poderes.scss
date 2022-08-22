@@ -1,3 +1,5 @@
+// Map
+
 $redes: (
   twitter: rgb(0, 119, 255),
   instagram: rgb(255, 55, 0),
@@ -5,10 +7,7 @@ $redes: (
 );
 
 
-%i-placeholder {
-  margin-right: 5px;
-}
-
+// Mixin
 
 @mixin size-logo {
   width: 65px;

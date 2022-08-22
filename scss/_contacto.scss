@@ -93,17 +93,14 @@
       margin-bottom: 15px;
 
       .fa-twitter {
-        @extend %i-placeholder;
         color: map-get($redes, "twitter");
       }
 
       .fa-square-instagram {
-        @extend %i-placeholder;
         color: map-get($redes, "instagram");
       }
 
       .fa-envelope {
-        @extend %i-placeholder;
         color: map-get($redes, "mail");
       }
     }
